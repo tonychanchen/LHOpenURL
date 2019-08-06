@@ -27,7 +27,7 @@
     return [self application:application openURL:url sourceApplication:nil annotation:nil];
 }
 
--(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<NSString *,id> *)options{
+-(BOOL)application:(UIApplication *)app openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey, id> *)options{
     if (!url) {
         NSLog(@"url is nil.");
         return NO;
