@@ -113,7 +113,7 @@
 -(BOOL)handle:(NSString*)classString withEntity:(LHOpenURLEntity*)entity{
     Class hc = NSClassFromString(classString);
     if (!hc) {
-        NSString *swiftClass = [@"SweetChat" stringByAppendingString:classString];
+        NSString *swiftClass = [@"SweetChat." stringByAppendingString:classString];
         hc = NSClassFromString(swiftClass);
     }
     if (!hc) {
